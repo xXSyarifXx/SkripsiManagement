@@ -25,7 +25,7 @@ public class Database {
         } catch (ClassNotFoundException ex) {
             throw new Exception("Driver not found");
         }
-        String connectionUrl = "jdbc:mysql://localhost:3306/jdbcdemo?autoReconnect=true&useSSL=false"; 
+        String connectionUrl = "jdbc:mysql://localhost:3306/SkripsiMNG_DB?autoReconnect=true&useSSL=false"; 
         conn = DriverManager.getConnection(connectionUrl, user, password);
         System.out.println("Connected!");
     }
